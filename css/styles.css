@@ -1,0 +1,212 @@
+#first {
+    background: url("../img/img1.jpeg");
+}
+
+#second {
+    background: url("../img/img2.jpeg");
+}
+
+#third {
+    background: url("../img/img3.jpeg");
+}
+
+#fourth {
+    background: url("../img/img4.jpeg");
+}
+
+#fifth {
+    background: url("../img/img5.jpeg");
+}
+
+#sixth {
+    background: url("../img/img6.jpeg");
+}
+
+#seventh {
+    background: url("../img/img7.jpeg");
+}
+
+#eighth {
+    background: url("../img/img8.jpeg");
+}
+
+#nineth {
+    background: url("../img/img9.jpeg");
+}
+
+#first {
+    background: url("../img/img1.jpeg");
+}
+
+#first {
+    background: url("../img/img1.jpeg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgba(140, 0, 255, 1);
+    background: -moz-linear-gradient(-45deg, rgba(140, 0, 255, 1) 0%, rgba(143, 0, 114, 1) 39%, rgba(193, 70, 161, 1) 58%, rgba(140, 0, 255, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(140, 0, 255, 1)), color-stop(39%, rgba(143, 0, 114, 1)), color-stop(58%, rgba(193, 70, 161, 1)), color-stop(100%, rgba(140, 0, 255, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(140, 0, 255, 1) 0%, rgba(143, 0, 114, 1) 39%, rgba(193, 70, 161, 1) 58%, rgba(140, 0, 255, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(140, 0, 255, 1) 0%, rgba(143, 0, 114, 1) 39%, rgba(193, 70, 161, 1) 58%, rgba(140, 0, 255, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(140, 0, 255, 1) 0%, rgba(143, 0, 114, 1) 39%, rgba(193, 70, 161, 1) 58%, rgba(140, 0, 255, 1) 100%);
+    background: linear-gradient(135deg, rgba(140, 0, 255, 1) 0%, rgba(143, 0, 114, 1) 39%, rgba(193, 70, 161, 1) 58%, rgba(140, 0, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8c00ff', endColorstr='#8c00ff', GradientType=1);
+    
+}
+
+
+.main{
+    margin-top: 40px;
+}
+
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 35px 8px #000000;
+}
+
+.grid{
+    position: relative;
+    width: 33.33%;
+    float: left;
+    height: 200px;
+    color: #ffffff;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+a.heading {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    z-index: 1;
+    border: 1px solid #CCC;
+}
+a.heading span {
+    position: relative;
+    top: 65px;
+    padding: 8px;
+    border: 2px solid #ffffff;
+    background-color: rgba(103,9,9,0.4);
+}
+.details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #272727;
+    color: #ffffff;
+    font-size: 15px;
+    opacity: 0;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    
+}
+
+.details a.close{
+    color: #ffffff;
+    margin-right: 15px;
+    margin-top: 5px;
+    text-align: right;
+    display: block;
+    text-decoration: none;
+}
+
+
+.details h2{
+    color: #fff;
+    margin-top: 5px;
+
+}
+
+.details p{
+    margin-top: 0px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+.grid:nth-child(3n+1) .details:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:  10px solid #b72121;
+}
+
+.grid:nth-child(3n+2) .details:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:  10px solid #b72121;
+}
+
+.grid:nth-child(3n+3) .details:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:  10px solid #b72121;
+    transform: rotate(180deg);
+}
+
+
+
+
+/* Adding effect using pseudo class target */
+
+.grid:nth-child(3n+1) .details:target{
+    opacity: 1;
+    left: 100%;
+    z-index: 99;
+}
+
+.grid:nth-child(3n+2) .details:target{
+    opacity: 1;
+    left: 100%;
+    z-index: 99;
+}
+
+.grid:nth-child(3n+3) .details:target{
+    opacity: 1;
+    left: -100%;
+    z-index: 99;
+}
