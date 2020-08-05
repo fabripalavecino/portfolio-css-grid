@@ -1,7 +1,5 @@
-# Project-css-grid
+# Project-grid
 
-
-using css grid
 
 ![](./screenshot.png)
 
